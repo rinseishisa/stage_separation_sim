@@ -59,7 +59,7 @@ INITIAL_STATE = {
     "q2": np.array([1.0, 0.0, 0.0, 0.0]),
 
     # 角速度（ボディ座標）
-    "w1": np.array([0.0, 0.0, 0.0]),    # [rad/s]
+    "w1": np.array([0.0, 0.0, 0.0]),    # [rad/s] w=1は回転なし
     "w2": np.array([0.0, 0.0, 0.0]),    
 }
 
@@ -68,7 +68,7 @@ INITIAL_STATE = {
 # ====================
 
 SEPARATION = {
-    "delata_v": 1.0,   # [m/s] 分離時の相対速度
+    "delta_v": 1.0,   # [m/s] 分離時の相対速度
     "direction": np.array([0.0, 0.0, 1.0]),  # 分離方向（正規前）
 }
 
